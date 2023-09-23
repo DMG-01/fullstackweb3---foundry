@@ -5,6 +5,7 @@ const connectButton = document.getElementById("connect-button");
 const fundButton = document.getElementById("fund-button");
 const getBalanceButton = document.getElementById("balance-button");
 const withdrawButton = document.getElementById("withdraw-button")
+const getBalancee = document.getElementById("getBalance")
 
 getBalanceButton.onclick = getBalance;
 connectButton.onclick = connect;
@@ -49,8 +50,10 @@ else {
 async function getBalance() {
 if(typeof window.ethereum !== "undefined") {
 const provider = new ethers.providers.Web3Provider(window.ethereum)
-const balance = await provider.getBalance("0x64C7258F1F7Fa28c436AfCA61A1259930402db0F")
+const balance = await provider.getBalance(contractAddress)
 console.log(ethers.utils.formatEther(balance))
+const total =  ethers.utils.formatEther(balance)
+getBalancee.innerHTML = "BALANCE:" + ethers.utils.formatEther(balance)
 }
 
 }

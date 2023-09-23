@@ -4,16 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VDYNE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   </head>
   <body>
-    <h1 id="screen">DVYNE'S CROWD-FUND</h1>
-    <button id="connect-button">CONNECT</button>
-    <button id="fund-button">FUND</button>
-    <button id="balance-button">BALANCE</button>
-    <button id="withdraw-button">WITHDRAW</button>
+    <p id="getBalance">BALANCE:</p>
+    <div id="top">
+   <div> <h1 id="screen">DVYNE'S CROWD-FUND</h1> </div>
+    <div><button id="connect-button">CONNECT</button> </div>
+    </div>
 
-    <label for="fund">ETH_AMOUNT</label>
-    <input placeholder="0.1" id="eth-amount">
+    <div id="input"><input placeholder="0.1" id="eth-amount"></div>
+    <div id="body">
+    <div><button id="fund-button">FUND</button></div>
+    <div><button id="balance-button">BALANCE</button></div>
+    <div><button id="withdraw-button">WITHDRAW</button></div>
+    </div>
+
+    <div id="footer">
+      <div id="first">
+        <div><i class="bi bi-linkedin"></i></div>
+        <div><i class="bi bi-github"></i></div>
+        <div><i class="bi bi-discord"></i></div>
+      </div>
+      <div id="second">
+        <div><i class="bi bi-envelope"></i></div>
+        <div><i class="bi bi-telephone"></i></div>
+        <div><i class="bi bi-twitter-x"></i></div>
+      </div>
+      <div id="third">
+        <div><i class="bi bi-twitter-x"></i></div>
+        <div><i class="bi bi-threads"></i></div>
+        <div><i class="bi bi-person-fill"></i></div>
+      </div>
+    </div>
+
+    <h3>©DVYNE 2023</h3>
   </body>
   <script src="./index.js" type="module"></script>
 </html>
