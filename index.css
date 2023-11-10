@@ -6,6 +6,8 @@
 body {
     border:none;
     border-radius:0 0 40px 40px;
+    padding-right:20px;
+    padding-left:20px;
     @media only screen and (min-width: 400px){
         border:none;
         margin-right:10%;
@@ -100,6 +102,7 @@ input {
 i {
     color:black;
     font-weight:100;
+    font-size:13px;
 }
 h3{
     text-align:center;
